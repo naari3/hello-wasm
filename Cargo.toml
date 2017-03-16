@@ -1,0 +1,9 @@
+[package]
+name = "hello_wasm"
+version = "0.1.0"
+authors = ["naari3 <qazaqaza98@gmail.com>"]
+
+[dependencies]
+
+[target.wasm32-unknown-emscripten]
+rustflags = ["-C","link-args=\"-s EXPORTED_FUNCTIONS=['_fibonacci']\""] # help
